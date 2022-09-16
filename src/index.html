@@ -49,12 +49,13 @@
 
     <script>
       const product = document.getElementsByClassName('card product');
-      const dataPrice = document.createElement('div');
-      dataPrice.setAttribute('class', 'data-price');
+      product.setAttribute('class', 'data-price');
+      // const dataPrice = document.createElement('div');
+      // dataPrice.setAttribute('class', 'data-price');
 
       const price = getElementsByClassName('subtitle is-6 price').getInnerHTML();
 
-      dataPrice.innerHTML = price;
+      product.innerHTML = price;
 
     </script>
   </body>
