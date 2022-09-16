@@ -48,15 +48,13 @@
     </div>
 
     <script>
-      const product = document.getElementsByClassName('card product');
-      product.setAttribute('class', 'data-price');
-      // const dataPrice = document.createElement('div');
-      // dataPrice.setAttribute('class', 'data-price');
-
-      const price = getElementsByClassName('subtitle is-6 price').getInnerHTML();
-
-      product.innerHTML = price;
-
+      const productList = document.getElementsByClassName('card product');
+      const product = productList[0];
+      const priceList = document.getElementsByClassName('subtitle is-6 price');
+      const priceElement = priceList[0];
+      const price = priceElement.getInnerHTML();
+      product.setAttribute('data-price', price);
+    
     </script>
   </body>
 </html>
